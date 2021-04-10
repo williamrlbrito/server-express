@@ -20,7 +20,7 @@ class UserToken {
 
   @ManyToOne(() => User)
   @JoinColumn({ name: 'user_id' })
-  provider: User;
+  user: User;
 
   @CreateDateColumn()
   created_at: Date;
