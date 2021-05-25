@@ -28,8 +28,6 @@ class ListProvidersService {
         except_user_id: user_id,
       });
 
-      console.log('Buscou na base');
-
       await this.cacheProvider.save(`providers-list:${user_id}`, users);
     }
 
